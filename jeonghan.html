@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEVENTEEN - Jeonghan</title>
+    <link rel="stylesheet" href="beauty.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>SEVENTEEN</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Jeonghan.html" class="active">Jeonghan</a></li>
+                <li><a href="upcoming.html">Events</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="member-detail">
+            <div class="member-hero">
+                <div class="video-background">
+                    <!-- 添加 preload="auto" 和 autoplay、muted、loop、playsinline 属性 -->
+                    <video id="heroVideo" autoplay loop playsinline preload="auto">
+                        <source src="images/RPReplay_Final1736048233.mp4" type="video/mp4">
+                        您的浏览器不支持视频播放。
+                    </video>
+                </div>
+                <div class="hero-overlay"></div>
+                <h1>Yoon Jeonghan</h1>
+                <!-- 播放按钮 -->
+                <button id="playButton">播放/暂停</button>
+            </div>
+        
+        
+            <div class="member-info-container">
+                <div class="member-basic-info">
+                    <h2>Profile</h2>
+                    <ul>
+                        <li><strong>Stage Name:</strong> Jeonghan (정한)</li>
+                        <li><strong>Birth Name:</strong> Yoon Jeong Han (윤정한)</li>
+                        <li><strong>Position:</strong> Lead Vocalist</li>
+                        <li><strong>Birthday:</strong> October 4, 1995</li>
+                        <li><strong>Zodiac Sign:</strong> Libra</li>
+                        <li><strong>Height:</strong> 178 cm (5'10")</li>
+                        <li><strong>Blood Type:</strong> B</li>
+                        <li><strong>Unit:</strong> Vocal Team</li>
+                        <li><strong>Favourite Color:</strong> Yellow</li>
+                        <li><strong>Personality:</strong> Cheerful and gentle, but with poor physical strength</li>
+                        <li><strong>Nickname:</strong> Angel, Hannie</li>
+                        <li><strong>Education:</strong> Seoul Broadcasting High School</li>
+                        <li><strong>Languages:</strong> Korean (Native), Basic Japanese</li>
+                    </ul>
+                    <div class="profile-extra-image">
+                        <img src="images/截屏0007-01-04 12.50.39.png" alt="Jeonghan Extra Photo">
+                    </div>
+                </div>
+
+                <div class="member-gallery">
+                    <h2>Gallery</h2>
+                    <div class="gallery-categories">
+                        <div class="gallery-category">
+                            <img src="images/IMG_7027.GIF" alt="Jeonghan On Stage">
+                            <div class="category-overlay">
+                                <h3>On Stage</h3>
+                                <p>Performance & Concert Moments</p>
+                                <a href="jeonghan-stage.html" class="category-link">View Gallery</a>
+                            </div>
+                        </div>
+                        <div class="gallery-category">
+                            <img src="images/IMG_7021.GIF" alt="Jeonghan Off Stage">
+                            <div class="category-overlay">
+                                <h3>Off Stage</h3>
+                                <p>Off-camera & Daily Life</p>
+                                <a href="jeonghan-offstage.html" class="category-link">View Gallery</a>
+                            </div>
+                        </div>
+                        <div class="gallery-category">
+                            <img src="images/IMG_7050.GIF" alt="Jeonghan On Screen">
+                            <div class="category-overlay">
+                                <h3>On Screen</h3>
+                                <p>TV Shows & Variety</p>
+                                <a href="jeonghan-screen.html" class="category-link">View Gallery</a>
+                            </div>
+                        </div>
+                        <div class="gallery-category">
+                            <img src="images/IMG_7017.GIF" alt="Jeonghan Fashion">
+                            <div class="category-overlay">
+                                <h3>Fashion</h3>
+                                <p>Style & Fashion Moments</p>
+                                <a href="jeonghan-fashion.html" class="category-link">View Gallery</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fun Facts Section -->
+            <div class="member-facts">
+                <h2>Fun Facts</h2>
+                <ul>
+                    <li>Nicknamed "Angel" due to his angelic appearance</li>
+                    <li>Known for his wit and strategic thinking in games</li>
+                    <li>Often called the group's "master of deception" in games</li>
+                    <li>Has a habit of sleeping whenever he has free time</li>
+                    <li>The meaning of the name is "Clean Galaxy".</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 SEVENTEEN Fan Page. All rights reserved to Vivian Zuo.</p>
+        <p>This is an unofficial fan page. All content belongs to PLEDIS Entertainment.</p>
+    </footer>
+
+    <!-- 添加模态框用于图片预览 -->
+    <div class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content">
+    </div>
+
+    <!-- 添加照片集模态框 -->
+    <div class="gallery-modal">
+        <span class="modal-close">&times;</span>
+        <div class="gallery-content">
+            <!-- 照片集将通过JavaScript动态加载 -->
+        </div>
+        <button class="gallery-nav prev">&lt;</button>
+        <button class="gallery-nav next">&gt;</button>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
